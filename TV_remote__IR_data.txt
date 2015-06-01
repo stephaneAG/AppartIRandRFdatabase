@@ -1,0 +1,13361 @@
+ IRDA SIGNALS FOR SAMSUNG TV REMOTE - StephaneAG 2013
+ 
+ # R:  if using shiriff's IRRemote library, use "irsend.sendRaw(0xE0E040BF, 32, 38);"
+ # "Unexpected codeType 11" for the manufacturer, so we assume 38KHz
+ # WARNING: untested -> so try the above code using the "IRSend_Debug_AppleRemote" sketch
+ 
+ ID: SAMS ( 1 )
+ 
+ ######################            POWER  =>  POWA / hex: E0E040BF
+#                      #
+#                      #          TV/DTV  =>  DTVS / hex: E0E0C23D
+#  POWER               #
+#                      #          SOURCE  =>  SRCS / hex: E0E0807F
+#  TV/DTV     SOURCE   #
+#                      #               1  =>     1 / hex: E0E020DF
+#    1     2     3     #
+#                      #               2  =>     2 / hex: E0E0A05F
+#    4     5     6     #
+#                      #               3  =>     3 / hex: E0E0609F
+#    7     8     9     #
+#                      #               4  =>     4 / hex: E0E010EF
+#  -/--    0  PRE-CH   #
+#                      #               5  =>     5 / hex: E0E0906F
+# VOLUME      CHANNEL  #
+#   UP           UP    #               6  =>     6 / hex: E0E050AF
+#        MUTE          #
+#                      #               7  =>     7 / hex: E0E030CF
+# VOLUME      CHANNEL  #
+#  DOWN         DOWN   #               8  =>     8 / hex: E0E0B04F
+#                      #
+# GUIDE  MENU  W.LINK  #               9  =>     9 / hex: E0E0708F
+#                      #
+# TOOLS        RETURN  #               0  =>     0 / hex: E0E08877
+#                      #            -/--  =>  -/-- / hex: E0E0C43B 
+#         UP           #          PRE-CH  =>  PREC / hex: E0E0C837
+#                      #
+#  LEFT  ENTER  RIGHT  #       VOLUME UP  =>  VOLU / hex: E0E0E01F
+#                      #
+#        DOWN          #     VOLUME DOWN  =>  VOLD / hex: E0E0D02F
+#                      #
+#  INFO         EXIT   #      CHANNEL UP  =>  CHAU / hex: E0E048B7
+#                      #
+#RED GREEN YELLOW BLUE #    CHANNEL DOWN  =>  CHAD / hex: E0E008F7
+#                      #
+# TTX/MIX P.SIZE  DMA  #            MUTE  =>  MUTE / hex: E0E0F00F
+#                      #
+# E.MODE CH LIST SUBT. #           GUIDE  =>  GUID / hex: E0E0F20D
+#                      #
+#   <<     ||     >>   #            MENU  =>  MENU / hex: E0E058A7
+#                      #
+#  REC    PLAY   STOP  #          W.LINK  =>  LINK / hex: E0E031CE
+#                      #
+#                      #           TOOLS  =>  TOOL / hex: E0E0D22D
+ ######################
+                                  RETURN  =>  RTRN / hex: E0E01AE5
+
+## POWER                          KEY UP  =>  KEYU / hex: E0E006F9
+Received: 
+                                KEY DOWN  =>  KEYD / hex: E0E08679
+OFF 	ON
+                                KEY LEFT  =>  KEYL / hex: E0E0A659
+62172 usec, 4420 usec
+                               KEY RIGHT  =>  KEYR / hex: E0E046B9
+4360 usec, 580 usec
+                                   ENTER  =>  ENTR / hex: E0E016E9
+1620 usec, 580 usec
+                                    INFO  =>  INFO / hex: E0E0F807
+1620 usec, 580 usec
+                                    EXIT  =>  EXIT / hex: E0E0B44B
+1620 usec, 580 usec
+                              BUTTON RED  =>  BRED / hex: E0E036C9
+520 usec, 580 usec
+                            BUTTON GREEN  =>  BGRN / hex: E0E028D7
+520 usec, 580 usec
+                           BUTTON YELLOW  =>  BYLW / hex: E0E0A857
+520 usec, 600 usec
+                             BUTTON BLUE  =>  BLUE / hex: E0E06897
+500 usec, 580 usec
+                                 TTX/MIX  =>  TMIX / hex: E0E034CB
+540 usec, 580 usec
+                                  P.SIZE  =>  PSIZ / hex: E0E07C83
+1620 usec, 580 usec
+                                     DMA  =>  DMA / hex: E0E0C639
+1620 usec, 580 usec
+                                  E.MODE  =>  EMOD / hex: E0E029D6
+1600 usec, 600 usec
+                                 CH LIST  =>  CHLS / hex: E0E0D629
+500 usec, 600 usec
+                                   SUBT.  =>  SUBT / hex: E0E0A45B
+520 usec, 580 usec
+                                      <<  =>  PREV / hex: E0E0A25D
+520 usec, 580 usec
+                                      >>  =>  NEXT / hex: E0E012ED
+520 usec, 580 usec
+                                   PAUSE  =>  PAUZ / hex: E0E052AD
+520 usec, 580 usec
+                                    PLAY  =>  PLAY / hex: E0E0E21D
+520 usec, 580 usec
+                                     REC  =>  TOOL / hex: E0E0926D
+1620 usec, 580 usec
+                                    STOP  =>  TOOL / hex: E0E0629D
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	58, 54,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+## TV/DTV
+
+
+Received: 
+
+OFF 	ON
+
+37400 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+1640 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 50,
+
+	60, 52,
+
+	58, 162,
+
+	58, 162,
+
+	56, 164,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## SOURCE
+
+
+Received: 
+
+OFF 	ON
+
+11188 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45880 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4588,
+
+	446, 432,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	62, 48,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 0};
+
+
+
+
+## 1
+
+Received: 
+
+OFF 	ON
+
+20596 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## 2
+Received: 
+
+OFF 	ON
+
+25508 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+1600 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+45860 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	62, 158,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	62, 48,
+
+	60, 160,
+
+	62, 48,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 4586,
+
+	446, 432,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	62, 158,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 158,
+
+	62, 48,
+
+	62, 158,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 0};
+
+
+
+
+
+## 3
+Received: 
+
+OFF 	ON
+
+9432 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+45860 usec, 4460 usec
+
+4340 usec, 600 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 600 usec
+
+500 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	60, 160,
+
+	60, 160,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 50,
+
+	60, 50,
+
+	60, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 4586,
+
+	446, 434,
+
+	60, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 158,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	60, 50,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 0};
+
+
+
+
+
+## 4
+
+Received: 
+
+OFF 	ON
+
+46716 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+45820 usec, 4440 usec
+
+4340 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 620 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	60, 50,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	62, 48,
+
+	60, 160,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 4582,
+
+	444, 434,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 158,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	60, 50,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	60, 50,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	62, 0};
+
+
+
+
+
+## 5
+
+
+Received: 
+
+OFF 	ON
+
+9412 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	60, 50,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## 6
+Received: 
+
+OFF 	ON
+
+18164 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+1600 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 620 usec
+
+45820 usec, 4460 usec
+
+4340 usec, 600 usec
+
+1600 usec, 600 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	62, 158,
+
+	60, 160,
+
+	62, 158,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 158,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	60, 160,
+
+	62, 48,
+
+	62, 158,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	62, 4582,
+
+	446, 434,
+
+	60, 160,
+
+	60, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 48,
+
+	62, 158,
+
+	62, 50,
+
+	60, 160,
+
+	60, 158,
+
+	62, 158,
+
+	62, 158,
+
+	58, 0};
+
+
+
+
+
+## 7
+Received: 
+
+OFF 	ON
+
+13856 usec, 4420 usec
+
+4380 usec, 560 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 620 usec
+
+480 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 438,
+
+	56, 162,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 4586,
+
+	446, 434,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	62, 48,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	60, 50,
+
+	62, 158,
+
+	60, 160,
+
+	58, 162,
+
+	60, 160,
+
+	60, 0};
+
+
+
+
+
+## 8
+Received: 
+
+OFF 	ON
+
+54052 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+45880 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+1640 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 160,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 4588,
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	54, 164,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	56, 0};
+
+
+
+
+
+## 9
+Received: 
+
+OFF 	ON
+
+13064 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+45900 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+1640 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 4590,
+
+	446, 434,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	56, 164,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 0};
+
+
+
+
+
+## -/--
+
+
+Received: 
+
+OFF 	ON
+
+37656 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 540 usec
+
+560 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 560 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 54,
+
+	54, 56,
+
+	56, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 162,
+
+	60, 160,
+
+	58, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 162,
+
+	56, 54,
+
+	58, 54,
+
+	56, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	446, 434,
+
+	58, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 54,
+
+	58, 54,
+
+	56, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	60, 54,
+
+	56, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	58, 0};
+
+
+
+
+
+## 0
+
+
+Received: 
+
+OFF 	ON
+
+37980 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4380 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+540 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+1600 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 56,
+
+	56, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 54,
+
+	58, 54,
+
+	56, 54,
+
+	56, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 54,
+
+	56, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 4586,
+
+	442, 438,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	58, 54,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 160,
+
+	58, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 56,
+
+	56, 162,
+
+	58, 162,
+
+	58, 160,
+
+	58, 0};
+
+
+
+
+
+## PRE-CH
+Received: 
+
+OFF 	ON
+
+3128 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 560 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	60, 50,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	56, 52,
+
+	60, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## VOLUME UP
+Received: 
+
+OFF 	ON
+
+12780 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+560 usec, 540 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 56,
+
+	54, 54,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 56,
+
+	54, 54,
+
+	56, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 54,
+
+	56, 52,
+
+	58, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## CHANNEL UP
+
+
+Received: 
+
+OFF 	ON
+
+52268 usec, 4460 usec
+
+4320 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 540 usec
+
+1620 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45900 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 54,
+
+	54, 162,
+
+	60, 54,
+
+	56, 54,
+
+	56, 160,
+
+	60, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4590,
+
+	442, 436,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	60, 160,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 0};
+
+
+
+
+
+## MUTE
+Received: 
+
+OFF 	ON
+
+47716 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+540 usec, 560 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4440 usec
+
+4340 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 54,
+
+	56, 162,
+
+	60, 160,
+
+	60, 160,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 52,
+
+	60, 54,
+
+	56, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	444, 434,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## VOLUME DOWN
+Received: 
+
+OFF 	ON
+
+1476 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 160,
+
+	58, 162,
+
+	60, 50,
+
+	58, 162,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## CHANNEL DOWN
+Received: 
+
+OFF 	ON
+
+784 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 560 usec
+
+1640 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 4586,
+
+	444, 434,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	56, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	56, 164,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 0};
+
+
+
+
+
+## GUIDE
+Received: 
+
+OFF 	ON
+
+51412 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 560 usec
+
+1640 usec, 560 usec
+
+1640 usec, 580 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 560 usec
+
+1600 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4380 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 560 usec
+
+1640 usec, 580 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 162,
+
+	56, 164,
+
+	56, 164,
+
+	58, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 54,
+
+	56, 160,
+
+	60, 160,
+
+	58, 56,
+
+	56, 160,
+
+	58, 4586,
+
+	442, 438,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	56, 164,
+
+	58, 54,
+
+	56, 160,
+
+	60, 0};
+
+
+
+
+
+
+## MENU
+Received: 
+
+OFF 	ON
+
+22568 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+1620 usec, 600 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45880 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+500 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1600 usec, 580 usec
+
+540 usec, 560 usec
+
+1640 usec, 560 usec
+
+560 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	54, 162,
+
+	60, 54,
+
+	56, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 54,
+
+	56, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4588,
+
+	446, 434,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	56, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 52,
+
+	58, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	56, 50,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 52,
+
+	58, 54,
+
+	56, 160,
+
+	58, 54,
+
+	56, 164,
+
+	56, 56,
+
+	56, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## W.LINK
+
+
+Received: 
+
+OFF 	ON
+
+48308 usec, 4420 usec
+
+4380 usec, 560 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+45880 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 438,
+
+	56, 162,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 4588,
+
+	446, 434,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	58, 54,
+
+	56, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	54, 0};
+
+
+
+
+
+## TOOLS
+Received: 
+
+OFF 	ON
+
+29856 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4440 usec
+
+4340 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 160,
+
+	60, 52,
+
+	58, 162,
+
+	58, 160,
+
+	60, 52,
+
+	58, 162,
+
+	58, 4586,
+
+	444, 434,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	60, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## RETURN
+Received: 
+
+OFF 	ON
+
+22448 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+560 usec, 560 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	58, 56,
+
+	56, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 56,
+
+	54, 56,
+
+	54, 54,
+
+	58, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 56,
+
+	56, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 160,
+
+	60, 160,
+
+	58, 56,
+
+	54, 162,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 0};
+
+
+
+
+
+
+## UP
+Received: 
+
+OFF 	ON
+
+11512 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+500 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+560 usec, 540 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 50,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 56,
+
+	54, 54,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 0};
+
+
+
+
+
+
+## LEFT
+Received: 
+
+OFF 	ON
+
+10340 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4460 usec
+
+4320 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 560 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 162,
+
+	58, 56,
+
+	56, 54,
+
+	56, 160,
+
+	60, 54,
+
+	56, 162,
+
+	58, 162,
+
+	56, 56,
+
+	56, 54,
+
+	56, 162,
+
+	58, 4586,
+
+	446, 432,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	56, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 52,
+
+	56, 162,
+
+	58, 56,
+
+	54, 162,
+
+	58, 56,
+
+	54, 56,
+
+	56, 160,
+
+	60, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 0};
+
+
+
+
+
+## ENTER
+Received: 
+
+OFF 	ON
+
+4728 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4380 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	60, 50,
+
+	60, 52,
+
+	58, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	56, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 438,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	60, 0};
+
+
+
+
+
+
+## RIGHT
+Received: 
+
+OFF 	ON
+
+38128 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45900 usec, 4420 usec
+
+4380 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 540 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 4590,
+
+	442, 438,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	60, 54,
+
+	54, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 54,
+
+	56, 56,
+
+	56, 160,
+
+	58, 0};
+
+
+
+
+
+
+## DOWN
+Received: 
+
+OFF 	ON
+
+33440 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1640 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45880 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 52,
+
+	58, 54,
+
+	56, 164,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 4588,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 0};
+
+
+
+
+
+
+## INFO
+Received: 
+
+OFF 	ON
+
+32448 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 580 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4586,
+
+	446, 434,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	58, 54,
+
+	58, 162,
+
+	58, 162,
+
+	58, 160,
+
+	58, 0};
+
+
+
+
+
+## EXIT
+Received: 
+
+OFF 	ON
+
+30184 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 560 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 54,
+
+	56, 160,
+
+	60, 54,
+
+	56, 160,
+
+	60, 160,
+
+	58, 56,
+
+	56, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	58, 4586,
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	60, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	56, 54,
+
+	58, 162,
+
+	58, 160,
+
+	60, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## RED
+Received: 
+
+OFF 	ON
+
+64352 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 560 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+560 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 160,
+
+	58, 162,
+
+	60, 160,
+
+	58, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 160,
+
+	58, 162,
+
+	58, 56,
+
+	56, 160,
+
+	60, 160,
+
+	58, 56,
+
+	56, 160,
+
+	58, 162,
+
+	58, 54,
+
+	58, 54,
+
+	56, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 162,
+
+	58, 160,
+
+	60, 54,
+
+	56, 162,
+
+	58, 162,
+
+	56, 56,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 0};
+
+
+
+
+
+
+## GREEN
+Received: 
+
+OFF 	ON
+
+47756 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 4586,
+
+	444, 434,
+
+	60, 160,
+
+	58, 162,
+
+	60, 160,
+
+	60, 52,
+
+	58, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	58, 160,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 0};
+
+
+
+
+
+## YELLOW
+
+Received: 
+
+OFF 	ON
+
+59188 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 620 usec
+
+480 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 580 usec
+
+520 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45880 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 434,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	62, 48,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	58, 52,
+
+	62, 48,
+
+	62, 50,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	62, 48,
+
+	62, 158,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	62, 48,
+
+	62, 48,
+
+	60, 160,
+
+	60, 52,
+
+	60, 160,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4588,
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 54,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## BLUE
+Received: 
+
+OFF 	ON
+
+60756 usec, 4460 usec
+
+4340 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45900 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 434,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 56,
+
+	54, 162,
+
+	58, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4590,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 160,
+
+	60, 160,
+
+	58, 52,
+
+	60, 160,
+
+	60, 54,
+
+	54, 56,
+
+	56, 54,
+
+	56, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 54,
+
+	58, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## TTX/MIX
+Received: 
+
+OFF 	ON
+
+50300 usec, 4420 usec
+
+4380 usec, 580 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+45860 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 560 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 438,
+
+	58, 160,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	58, 4586,
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	58, 52,
+
+	60, 52,
+
+	58, 162,
+
+	56, 162,
+
+	60, 50,
+
+	60, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## P.SIZE
+Received: 
+
+OFF 	ON
+
+19928 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	58, 52,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 4586,
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	56, 52,
+
+	60, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 162,
+
+	60, 160,
+
+	60, 0};
+
+
+
+
+
+
+## DMA
+
+
+Received: 
+
+OFF 	ON
+
+37484 usec, 4460 usec
+
+4320 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+45840 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 600 usec
+
+500 usec, 620 usec
+
+480 usec, 600 usec
+
+500 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+480 usec, 620 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 158,
+
+	62, 158,
+
+	60, 50,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 158,
+
+	62, 4584,
+
+	444, 434,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 48,
+
+	62, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 50,
+
+	60, 50,
+
+	62, 158,
+
+	62, 158,
+
+	60, 50,
+
+	62, 48,
+
+	60, 50,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 48,
+
+	62, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	60, 0};
+
+
+
+
+
+
+## E.MODE
+Received: 
+
+OFF 	ON
+
+64276 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+45840 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	60, 4584,
+
+	444, 436,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	58, 0};
+
+
+
+
+
+
+## CH LIST
+
+
+Received: 
+
+OFF 	ON
+
+40144 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+45900 usec, 4420 usec
+
+4380 usec, 560 usec
+
+1640 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+560 usec, 540 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 620 usec
+
+500 usec, 600 usec
+
+1580 usec, 580 usec
+
+520 usec, 620 usec
+
+1580 usec, 600 usec
+
+1600 usec, 620 usec
+
+520 usec, 580 usec
+
+1600 usec, 600 usec
+
+1580 usec, 620 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	60, 160,
+
+	60, 160,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 54,
+
+	58, 54,
+
+	56, 160,
+
+	60, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 56,
+
+	54, 162,
+
+	58, 162,
+
+	58, 54,
+
+	58, 160,
+
+	60, 160,
+
+	58, 4590,
+
+	442, 438,
+
+	56, 164,
+
+	58, 162,
+
+	58, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 56,
+
+	54, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	62, 50,
+
+	60, 158,
+
+	58, 52,
+
+	62, 158,
+
+	60, 160,
+
+	62, 52,
+
+	58, 160,
+
+	60, 158,
+
+	62, 0};
+
+
+
+
+
+## SUBT.
+Received: 
+
+OFF 	ON
+
+63200 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+480 usec, 620 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+45900 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 434,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 48,
+
+	62, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	60, 50,
+
+	60, 50,
+
+	60, 50,
+
+	60, 160,
+
+	58, 54,
+
+	58, 162,
+
+	58, 160,
+
+	60, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 4590,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	56, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+## <<
+Received: 
+
+OFF 	ON
+
+35764 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+560 usec, 540 usec
+
+520 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+45860 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 56,
+
+	54, 52,
+
+	60, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	56, 54,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 56,
+
+	54, 162,
+
+	60, 52,
+
+	58, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 4586,
+
+	444, 434,
+
+	60, 160,
+
+	58, 162,
+
+	60, 160,
+
+	60, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 52,
+
+	58, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 56,
+
+	54, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	60, 160,
+
+	60, 0};
+
+
+
+
+
+## ||
+Received: 
+
+OFF 	ON
+
+14388 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 600 usec
+
+45840 usec, 4440 usec
+
+4340 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	58, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	56, 52,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 160,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	60, 4584,
+
+	444, 434,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## >>
+Received: 
+
+OFF 	ON
+
+6104 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+45860 usec, 4420 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 160,
+
+	60, 160,
+
+	60, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 54,
+
+	58, 162,
+
+	58, 50,
+
+	60, 160,
+
+	60, 160,
+
+	60, 160,
+
+	58, 54,
+
+	58, 162,
+
+	58, 160,
+
+	60, 50,
+
+	60, 160,
+
+	60, 4586,
+
+	442, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 162,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 160,
+
+	60, 54,
+
+	56, 52,
+
+	58, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 0};
+
+
+
+
+
+
+## REC
+
+
+Received: 
+
+OFF 	ON
+
+17336 usec, 4460 usec
+
+4320 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+520 usec, 580 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 580 usec
+
+1620 usec, 600 usec
+
+45840 usec, 4420 usec
+
+4380 usec, 580 usec
+
+1620 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+1600 usec, 600 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+520 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+520 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+500 usec, 600 usec
+
+1600 usec, 600 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	446, 432,
+
+	58, 162,
+
+	60, 160,
+
+	58, 162,
+
+	58, 52,
+
+	60, 52,
+
+	58, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	58, 54,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	58, 162,
+
+	60, 4584,
+
+	442, 438,
+
+	58, 162,
+
+	58, 160,
+
+	60, 160,
+
+	60, 50,
+
+	60, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 52,
+
+	58, 54,
+
+	58, 52,
+
+	58, 160,
+
+	60, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	58, 52,
+
+	58, 162,
+
+	58, 52,
+
+	60, 50,
+
+	60, 160,
+
+	60, 160,
+
+	58, 52,
+
+	58, 162,
+
+	58, 162,
+
+	60, 50,
+
+	60, 160,
+
+	60, 0};
+
+
+
+
+
+
+## PLAY
+Received: 
+
+OFF 	ON
+
+37628 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+1600 usec, 600 usec
+
+540 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+1600 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 600 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+45880 usec, 4420 usec
+
+4360 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+500 usec, 600 usec
+
+540 usec, 560 usec
+
+540 usec, 580 usec
+
+1600 usec, 580 usec
+
+540 usec, 580 usec
+
+520 usec, 580 usec
+
+500 usec, 620 usec
+
+520 usec, 580 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+1580 usec, 620 usec
+
+480 usec, 620 usec
+
+1580 usec, 620 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 160,
+
+	60, 160,
+
+	58, 162,
+
+	58, 56,
+
+	54, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	58, 160,
+
+	60, 54,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	58, 160,
+
+	58, 160,
+
+	60, 160,
+
+	60, 54,
+
+	56, 162,
+
+	58, 4588,
+
+	442, 436,
+
+	60, 160,
+
+	58, 162,
+
+	58, 162,
+
+	58, 56,
+
+	56, 54,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 56,
+
+	54, 162,
+
+	58, 162,
+
+	60, 160,
+
+	60, 50,
+
+	60, 54,
+
+	56, 54,
+
+	58, 160,
+
+	58, 54,
+
+	58, 52,
+
+	58, 50,
+
+	62, 52,
+
+	58, 158,
+
+	62, 158,
+
+	62, 158,
+
+	62, 48,
+
+	62, 158,
+
+	62, 0};
+
+
+
+
+
+
+## STOP
+Received: 
+
+OFF 	ON
+
+21392 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+1620 usec, 600 usec
+
+540 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+560 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+560 usec, 560 usec
+
+540 usec, 540 usec
+
+1620 usec, 600 usec
+
+1600 usec, 600 usec
+
+1600 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 600 usec
+
+45880 usec, 4440 usec
+
+4360 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+1640 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+540 usec, 560 usec
+
+540 usec, 560 usec
+
+560 usec, 540 usec
+
+1620 usec, 580 usec
+
+560 usec, 540 usec
+
+1620 usec, 600 usec
+
+520 usec, 580 usec
+
+540 usec, 560 usec
+
+1620 usec, 580 usec
+
+1620 usec, 580 usec
+
+1620 usec, 560 usec
+
+540 usec, 580 usec
+
+1620 usec, 580 usec
+
+int IRsignal[] = {
+
+// ON, OFF (in 10's of microseconds)
+
+	444, 436,
+
+	58, 160,
+
+	60, 160,
+
+	58, 162,
+
+	60, 54,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 56,
+
+	54, 56,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 54,
+
+	56, 162,
+
+	58, 56,
+
+	56, 54,
+
+	54, 162,
+
+	60, 160,
+
+	60, 160,
+
+	58, 56,
+
+	54, 162,
+
+	60, 4588,
+
+	444, 436,
+
+	58, 162,
+
+	58, 162,
+
+	56, 164,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 162,
+
+	58, 162,
+
+	58, 54,
+
+	58, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 54,
+
+	56, 54,
+
+	56, 56,
+
+	54, 162,
+
+	58, 56,
+
+	54, 162,
+
+	60, 52,
+
+	58, 54,
+
+	56, 162,
+
+	58, 162,
+
+	58, 162,
+
+	56, 54,
+
+	58, 162,
+
+	58, 0};

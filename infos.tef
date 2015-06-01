@@ -1,0 +1,8 @@
+# R: Remote controlling the "Merlin's Tower" loft is currently done using the two following sketches:
+/home/stephaneag/sketchbook/dev__Arduino/Domotic__HomeServer_Master # for the "Master" sketch
+/home/stephaneag/sketchbook/dev__Arduino/Domotic__HomeServer_Slave # for the "Slave" sketch
+
+# The "Master" is responsible for handling WiFi connections, providing a "very crude API" for us to curl URLs to trigger actions
+# UPDATE: the "Master" may be replaced by a tiny ESP8266-ESP01 while the I2C comm between the 2 'd be replaced by either a serial conn or I2C between ESP8266 & "Slave"
+# The "Slave" is responsible for handling RF 433MHz & IR commands sending to the different peripherals remotely controlled ( RF ->  Light power sockets / IR -> TV,Macs,HDMI switcher, .. )
+# Both of them get their label from the role they play over I2C: one begins & ends the transmission, the [ currently one ] slave handling parsing & triggering stuff according to parsed received commands
